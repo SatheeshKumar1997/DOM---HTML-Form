@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Form</title>
+</head>
+<body>
+  <form>
+    <div class="container">
+        <div class="row">
+          <div class="col">
+            <label for="fn" >First Name:</label><br>
+            <input type="text" id="fn" name="fname" size="70" required>
+          </div>
+        </div><br>
+
+        <div class="row">
+            <div class="col">
+                <label for="ln" >Last Name:</label><br>
+                <input type="text" id="ln" name="lname" size="70" required><br>    
+            </div>
+          </div><br>
+
+        <div class="row">
+            <div class="col">
+                <label for="add" >Address:</label><br>
+                <textarea id="addr" name="add" form="add" rows="4" cols="70" class="form" required></textarea>  
+            </div>
+        </div><br>
+
+        <div class="row">
+            <div class="col">
+                <label for="pin" >PinCode:</label><br>
+                <input type="number" id="pin" class="form" required>    
+            </div>
+          </div><br>
+
+          <div class="row">
+            <div class="col">
+                <label >Gender:</label><br>
+                <select id="gender" required>
+                  <option></option>
+                  <option value="Male">Male</option>
+                  <option value="Female">Female</option>
+                </select><br>
+            </div>
+          </div><br>
+
+          <div class="row">
+            <div class="col">
+              <label for="food" class="required">Choice of food:</label><br>
+              <input type="radio" name="Idly" id="Idly">
+              <label for="Idly">Idly</label><br>
+              <input type="radio" name="Dosa" id="Dosa">
+              <label for="Dosa">Dosa</label><br>
+              <input type="radio" name="Pongal" id="Pongal">
+              <label for="Pongal">Pongal</label><br>
+              <input type="radio" name="Chapathi" id="Chapathi">
+              <label for="Chapathi">Chapathi</label><br>
+              <input type="radio" name="Poori" id="Poori">
+              <label for="Poori">Poori</label><br><br>
+            </div>
+          </div><br>
+
+          <div class="row">
+          <div class="col">
+            <label for="state" >State:</label><br>           
+            <input type="text" id="state" name="state" size="30" required>
+          </div>
+          </div><br>
+
+          <div class="row">
+            <div class="col">
+              <label for="country" >Country:</label><br>           
+              <input type="text" id="country" name="country" size="30" required>
+            </div>
+          </div><br>
+
+          <div class="row">
+            <div class="col">
+              <button type="button" class="btn btn-success" onclick="add_data()">Submit</button>
+              <button type="button" class="btn btn-info" onclick="reset()">Reset</button>
+            </div>
+          </div><br>
+      </div>
+    <table>
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Address</th>
+        <th>PinCode</th>
+        <th>Gender</th>
+        <th>Choice of food</th>
+        <th>State</th>
+        <th>Country</th>
+      </tr>
+    </table>
+  </form>
+</body>
+</html>

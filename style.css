@@ -1,0 +1,27 @@
+body{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: #f2f2f2;
+}
+.container{
+    width: max-content;
+    outline-style: solid;
+    margin-bottom: 30px;
+    background-color: aliceblue;
+}
+.required::after{
+    content: '*';
+    color: red;
+}
+table,tr,th,td{
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid black;
+    text-align: center;
+}
+td{
+    font-weight: 500;
+}
+th{
+    background-color: 	#ff6161;
+}
